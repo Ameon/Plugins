@@ -1,0 +1,40 @@
+<html>
+<head>
+	<script type="text/javascript" src="plugins/chosen_v1.8.7/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="plugins/chosen_v1.8.7/chosen.jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="plugins/chosen_v1.8.7/chosen.css">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
+		div#content {
+			background: white;
+			border: 1px solid #ccc;
+			border-width: 0 1px 1px;
+			margin: 0 auto;
+			padding: 40px 50px 40px;
+			width: 738px;
+		}
+		
+	</style>
+</head>
+<body>
+
+<div id="content">
+	<select data-placeholder="Выберите страну..." class="chosen-select" tabindex="-1">
+				<option value=""></option>
+				<option value="1">Россия <option>
+				<option value="2">Китай</option>
+				<option value="3">Германия</option>
+	</select>
+	<script>
+		var config = {'.chosen-select':{}}
+		for (var selector in config) {
+		  $(selector).chosen(config[selector]);
+		}
+	</script>
+</div>
+</body>
+</html>
